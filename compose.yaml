@@ -13,13 +13,3 @@ services:
     depends_on:
       - db
   
-  phpmyadmin:
-    image: phpmyadmin/phpmyadmin:latest
-    container_name: contenedorPhpMyAdmin
-    environment:
-      PMA_HOST: db
-      MYSQL_ROOT_PASSWORD: concesionario1234
-    ports:
-      - "8081:80"
-    depends_on:
-      - db
